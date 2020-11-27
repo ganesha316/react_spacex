@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title itemprop="name">SpeceX</title>
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.bootdey.com/img/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="135x140" href="https://www.bootdey.com/img/bootdey_135x140.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="https://www.bootdey.com/img/bootdey_76x76.png" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+        <style>
+            body{margin-top:20px;
+                background:#f1f2f7;
+            }
+            
+            /*panel*/
+            .panel {
+                border: none;
+                box-shadow: none;
+            }
+            
+            .panel-heading {
+                border-color:#eff2f7 ;
+                font-size: 16px;
+                font-weight: 300;
+            }
+            
+            .panel-title {
+                color: #2A3542;
+                font-size: 14px;
+                font-weight: 400;
+                margin-bottom: 0;
+                margin-top: 0;
+                font-family: 'Open Sans', sans-serif;
+            }
+            
+            
+            /*product list*/
+            
+            .prod-cat li a{
+                border-bottom: 1px dashed #d9d9d9;
+            }
+            
+            .prod-cat li a {
+                color: #3b3b3b;
+            }
+            
+            .prod-cat li ul {
+                margin-left: 30px;
+            }
+            
+            .prod-cat li ul li a{
+                border-bottom:none;
+            }
+            .prod-cat li ul li a:hover,.prod-cat li ul li a:focus, .prod-cat li ul li.active a , .prod-cat li a:hover,.prod-cat li a:focus, .prod-cat li a.active{
+                background: none;
+                color: #ff7261;
+            }
+            
+            .pro-lab{
+                margin-right: 20px;
+                font-weight: normal;
+            }
+            
+            .pro-sort {
+                padding-right: 20px;
+                float: left;
+            }
+            
+            .pro-page-list {
+                margin: 5px 0 0 0;
+            }
+            
+            .product-list img{
+                width: 100%;
+                border-radius: 4px 4px 0 0;
+                -webkit-border-radius: 4px 4px 0 0;
+            }
+            
+            .product-list .pro-img-box {
+                position: relative;
+            }
+            .adtocart {
+                background: #fc5959;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                color: #fff;
+                display: inline-block;
+                text-align: center;
+                border: 3px solid #fff;
+                left: 45%;
+                bottom: -25px;
+                position: absolute;
+            }
+            
+            .adtocart i{
+                color: #fff;
+                font-size: 25px;
+                line-height: 42px;
+            }
+            
+            .pro-title {
+                color: #5A5A5A;
+                display: inline-block;
+                margin-top: 20px;
+                font-size: 16px;
+            }
+            
+            .product-list .price {
+                color:#fc5959 ;
+                font-size: 15px;
+            }
+            
+            .pro-img-details {
+                margin-left: -15px;
+            }
+            
+            .pro-img-details img {
+                width: 100%;
+            }
+            
+            .pro-d-title {
+                font-size: 16px;
+                margin-top: 0;
+            }
+            
+            .product_meta {
+                border-top: 1px solid #eee;
+                border-bottom: 1px solid #eee;
+                padding: 10px 0;
+                margin: 15px 0;
+            }
+            
+            .product_meta span {
+                display: block;
+                margin-bottom: 10px;
+            }
+            .product_meta a, .pro-price{
+                color:#fc5959 ;
+            }
+            
+            .pro-price, .amount-old {
+                font-size: 18px;
+                padding: 0 10px;
+            }
+            
+            .amount-old {
+                text-decoration: line-through;
+            }
+            
+            .quantity {
+                width: 120px;
+            }
+            
+            .pro-img-list {
+                margin: 10px 0 0 -15px;
+                width: 100%;
+                display: inline-block;
+            }
+            
+            .pro-img-list a {
+                float: left;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+            
+            .pro-d-head {
+                font-size: 18px;
+                font-weight: 300;
+            }
+        </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
